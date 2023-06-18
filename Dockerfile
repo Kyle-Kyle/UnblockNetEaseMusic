@@ -4,5 +4,5 @@ RUN pip install requests bs4
 ADD script.py /app/script.py
 
 RUN touch /var/log/unblockneteasemusic.log
-RUN echo "* * * * * python /app/script.py >> /var/log/unblockneteasemusic.log 2>&1" >> /var/spool/cron/crontabs/root
+RUN echo "01 0 * * * python /app/script.py >> /var/log/unblockneteasemusic.log 2>&1" >> /var/spool/cron/crontabs/root
 CMD crond && tail -f /var/log/unblockneteasemusic.log
