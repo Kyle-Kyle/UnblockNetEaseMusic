@@ -24,4 +24,5 @@ def run():
     assert len(songs), "Failed to obtain toplist!"
     print(len(songs))
 
-run()
+if __name__ == "__main__":
+    run()

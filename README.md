@@ -11,12 +11,17 @@
 - 打开网易云(https://music.163.com/) --> 按下`F12` --> `Application` --> `Cookies` --> `https://musci.163.com`
 - 找到所需要参数对应的数据.
 
-## 2. 运行docker
+## 2. 编译docker image
 ~~~
-docker run -d -e MUSCI_U=<参数> jkjh1jkjh1/unblockneteasemusic
+git clone https://github.com/Kyle-Kyle/UnblockNetEaseMusic
+docker build -t unblockneteasemusic UnblockNetEaseMusic
+~~~
+## 3. 运行docker container
+~~~
+docker run -d -e MUSCI_U=<参数> unblockneteasemusic
 ~~~
 命令运行完，各平台上的IP限制应该就都消失了，可以听所有的歌了。
-该docker image会每日定时(00:01 AM)自动完成交互，不需要重复部署。
+该docker container会每日定时(00:01 AM)自动完成交互，不需要重复部署。
 
 # 参考项目
 [NetEaseMusicWorldPlus](https://github.com/nondanee/NetEaseMusicWorldPlus)
