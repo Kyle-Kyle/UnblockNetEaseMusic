@@ -8,7 +8,7 @@
 
 ## 1. 准备需要的参数
 本项目成功运行需要一个参数`MUSIC_U`.
-- 打开网易云(https://music.163.com/) 登录账号后 --> 按下`F12` --> `Application` --> `Cookies` --> `https://musci.163.com`
+- 打开网易云(https://music.163.com/) 登录账号后 --> 按下`F12` --> `Application` --> `Cookies` --> `https://music.163.com`
 - 找到所需要参数对应的数据.
 
 ## 2. 编译docker image
