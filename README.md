@@ -18,7 +18,7 @@ docker build -t unblockneteasemusic UnblockNetEaseMusic
 ~~~
 ## 3. 运行docker container
 ~~~
-docker run -d -e MUSCI_U=<参数> unblockneteasemusic
+docker run -d -e MUSIC_U=<参数> unblockneteasemusic
 ~~~
 命令运行完，各平台上的IP限制应该就都消失了，可以听所有的歌了。
 该docker container会每日定时(00:01 AM)自动完成交互，不需要重复部署。
