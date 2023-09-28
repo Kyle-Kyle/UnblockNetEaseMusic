@@ -24,5 +24,8 @@ def run():
     assert len(songs), "Failed to obtain toplist!"
     print(len(songs))
 
+    r = s.post("https://music.163.com/weapi/login/token/refresh")
+    print(r.status_code)
+
 if __name__ == "__main__":
     run()
